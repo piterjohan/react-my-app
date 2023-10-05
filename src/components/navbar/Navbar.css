@@ -1,0 +1,33 @@
+.navbar > .container > ul {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.navbar-item {
+  border: 1px solid blue;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+  text-align: center;
+}
+
+.navbar-item.active {
+  border: 1px solid red;
+}
+
+.navbar > ul > li:hover {
+  border: 1px solid red;
+}
+
+.navbar-item.active > a,
+.navbar > ul > li:hover > a {
+  color: red;
+}
+
+.navbar-link {
+  cursor: pointer;
+  text-decoration: none;
+  color: blue;
+}

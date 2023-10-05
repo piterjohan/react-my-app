@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import TodoPage from "./pages/todo/TodoPage";
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
+  //tab
+  const [tab, setTab] = useState("todo");
+
+  const updateTab = (newTab) => {
+    console.log("updatedTabe app", newTab);
+    setTab(newTab);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar onTab={tab} updateTab={updateTab} />
+      {tab === "todo" ? <TodoPage /> : ""}
+    </>
   );
 }
 

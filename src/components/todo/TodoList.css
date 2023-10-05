@@ -1,0 +1,44 @@
+.todo-list {
+  padding-inline-start: 0;
+}
+
+.todo-list > li {
+  display: flex;
+  background-color: rgb(96, 220, 150);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.todo-text {
+  font-weight: bold;
+  margin: auto 0 auto 0; /* TRBL */
+}
+
+.todo-button {
+  display: flex;
+}
+
+.todo-button > button {
+  margin-left: 0.25rem;
+  border: 1px solid transparent;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.btn-todo-edit {
+  background-color: rgb(255, 255, 10);
+}
+
+.btn-todo-delete {
+  background-color: red;
+  color: white;
+}
+
+.btn-todo-edit:hover,
+.btn-todo-delete:hover {
+  background-color: rgb(106, 185, 100);
+  color: black;
+}
