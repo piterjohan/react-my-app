@@ -1,0 +1,124 @@
+.movie-background {
+  /* border-bottom: 1px solid var(--primaryColor); */
+  background-position: left calc((50vw - 170px) - 340px) top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.custom-background {
+  background-image: linear-gradient(
+    to right,
+    rgb(54 139 65) calc((50vw - 170px) - 340px),
+    rgb(56 115 72 / 84%) 50%,
+    rgb(55 138 70 / 84%) 100%
+  );
+}
+
+.movie-backdrop {
+  margin-top: 25px;
+}
+
+.content-movie {
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.description-movie {
+  padding: 1rem;
+}
+
+.popularity {
+  top: 2vh;
+  right: 2vh;
+  margin: 0 !important;
+  padding: 0.15rem;
+  width: 35px;
+  height: 35px;
+  background-color: #096c19;
+  border-radius: 25px;
+  box-shadow: 2px 2px 4px 0px #13bf68;
+}
+
+.popularity > small {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bolder;
+}
+
+.release-date {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #04542c;
+  padding: 0.25rem;
+  border-radius: 5px;
+  box-shadow: 2px 2px #087b44;
+}
+
+.release-date > small {
+  color: white;
+  font-weight: bolder;
+  padding: 0.5rem;
+}
+
+.title-movie {
+  color: #00ff1e;
+  text-shadow: 6px 3px 6px #343434;
+}
+
+.movie-label {
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.label {
+  background: linear-gradient(to right bottom, #008793, #00bf72, #a8eb12);
+  color: black;
+  font-weight: bolder;
+  font-size: 12px;
+  padding: 0.5rem;
+  border-radius: 25px;
+  box-shadow: 4px 3px 0px 0px #116f32;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.movie-descr > p {
+  color: #11ff00;
+  text-shadow: 6px 3px 6px #343434;
+}
+
+/* media query */
+@media only screen and (min-width: 1024px) {
+  .content-movie {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .content-movie {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .content-movie {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .movie-background {
+    background-position: left calc((50vw - 170px) - 768px) top;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .content-movie {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

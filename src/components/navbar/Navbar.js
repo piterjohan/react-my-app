@@ -1,14 +1,19 @@
 import "./Navbar.css";
+import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 
-export const Navbar = ({ onTab, updateTab }) => {
+export const Navbar = () => {
   const nav = [
-    { route_name: "todo", nav_name: "Todo App" },
+    { route_name: "/todo-app", nav_name: "Todo App" },
     { route_name: "movie-app", nav_name: "Movie App" },
   ];
 
+  const [tab, setTab] = useState("");
+
   const onUpdated = (newTab, event) => {
     event.preventDefault();
-    updateTab(newTab);
+    // setTab(newTab);
+    console.log("nav");
   };
 
   return (
@@ -19,15 +24,18 @@ export const Navbar = ({ onTab, updateTab }) => {
             <li
               key={navbarIndex}
               className={
-                onTab === navbarData.route_name
+                tab === navbarData.route_name
                   ? "navbar-item active"
                   : "navbar-item"
               }
-              onClick={(e) => onUpdated(navbarData.route_name, e)}
+              // onClick={(e) => onUpdated(navbarData.route_name, e)}
             >
-              <a href="!#" className="navbar-link">
+              <Link to={navbarData.route_name} className="navbar-link">
                 {navbarData.nav_name}
-              </a>
+              </Link>
+              {/* <a to={navbarData.route_name} className="navbar-link">
+                {navbarData.nav_name}
+              </a> */}
             </li>
           ))}
         </ul>

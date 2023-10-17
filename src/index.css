@@ -13,6 +13,32 @@ code {
 }
 
 /* utility */
+.container {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .center{
   text-align: center !important;
+}
+.justify{
+  text-align: justify !important;
+}
+.relative{
+  position: relative;
+}
+.absolute{
+  position: absolute;
+}
+.img-fluid{
+  width: 100%;
+}
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+/* padding */
+.p-1{
+  padding: 1rem !important;
 }

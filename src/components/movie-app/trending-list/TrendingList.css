@@ -1,0 +1,40 @@
+
+.card {
+  width: 14rem;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 9px 5px 10px 5px #b39f9f8f;
+  border-radius: 5px;
+}
+
+.img-trending {
+  border-radius: 0 0 0 25px;
+}
+
+.percent {
+  background-color: red;
+  left: 0.5rem;
+  bottom: -0.5rem;
+  border-radius: 25px;
+  width: 35px;
+  height: 35px;
+}
+
+.percent > small {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.trending-title {
+  padding: 10px;
+}
+
+.trending-title,
+.trending-title > h4,
+span {
+  text-align: left;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}

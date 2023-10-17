@@ -1,3 +1,31 @@
+# My App
+
+Project About Learning 
+React, React Router, Axios, Local Storage
+
+
+## Project Setup
+```sh
+copy env.example to .env
+```
+
+```sh
+REACT_APP_TMBD_MOVIE_API_KEY="YOUR TMBD API KEY"
+REACT_APP_TMBD_URL_API="https://api.themoviedb.org/3/"
+REACT_APP_TMBD_IMG_URL="https://image.tmdb.org/t/p/"
+```
+
+### Install Depedencies
+```sh
+npm install
+```
+
+### Compile and Hot-Reload for Development
+
+```sh
+npm start
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
